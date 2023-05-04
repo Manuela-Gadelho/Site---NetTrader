@@ -1,0 +1,139 @@
+.solucoes {
+  background-color: var(--color-2);
+}
+
+.solucoes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  gap: 200px 0px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solucoes h2 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solucoes-container h3 {
+  display: flex;
+  align-items: center;
+  gap: 0 8px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin-left: 100px;
+}
+
+.pldtrader,
+.grtrader,
+.suitability {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pldtrader ul {
+  grid-column: 1/3;
+}
+
+.pldtrader a {
+  justify-self: center;
+  align-self: end; 
+  grid-column: 2;
+  gap: 0 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.grtrader ul {
+  grid-column: 1/3;
+}
+
+.grtrader a {
+  justify-self: center;
+  align-self: end; 
+  grid-column: 2;
+  gap: 0 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.suitability ul {
+  grid-column: 1/3;
+}
+
+.suitability a {
+  justify-self: center;
+  align-self: end; 
+  grid-column: 2;
+  gap: 0 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+} 
+
+
+.solucoes p{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-left: 100px;
+}
+
+
+.solucoes li > h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--color-p1);
+}
+
+@media (max-width:800px) {
+  .solucoes-container{
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+  .solucoes h2 {
+    font-size: 1.5rem;
+   
+  }
+  .solucoes-container h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .solucoes-container p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+  .solucoes-container img {
+    width: 50%;
+  }
+}
+
+@media (max-width:400px){
+  .solucoes-container{
+    padding-bottom: 0px;
+  }
+}
