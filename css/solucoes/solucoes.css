@@ -1,0 +1,46 @@
+.solucao-bg {
+  background-color: var(--color-11);
+}
+
+.itens-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  gap: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.itens-imagens{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.itens-imagens img {
+  flex: 1;
+  min-width: 250px
+}
+
+.itens-imagens img:first-child{
+  min-width: 100%
+}
+
+.itens-conteudo > p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+
+.item-contato {
+  display: flex;
+  justify-content: end;
+}
